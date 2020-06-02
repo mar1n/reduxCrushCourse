@@ -22,10 +22,10 @@ class Postform extends Component {
            body: this.state.body
        }
 
-       fetch('https://jsonplaceholder.typicode.com/posts', {
+       fetch('http://jsonplaceholder.typicode.com/posts', {
            method: 'POST',
            headers: {
-               'content-type': 'application/json'
+            "Content-type": "application/json; charset=UTF-8"
            },
            body: JSON.stringify(post)
        })
